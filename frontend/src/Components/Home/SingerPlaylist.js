@@ -5,7 +5,11 @@ import { Link} from "react-scroll";
 import { useSongAuth } from '../../Hook/Song'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../Hook/Auth'
 function SingerPlaylist() {
+    const Auth=useAuth()
+    const NaviGate=useNavigate()
     const SongAuth = useSongAuth()
     const [isLoading, setisLoading] = useState(false)
     const [SongData, setSongData] = useState([])
@@ -52,7 +56,17 @@ function SingerPlaylist() {
 
     useEffect(()=>{
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    },)
+    },[])
+
+    useEffect(() => {
+        if (!localStorage.getItem('Token')) {
+            Auth.setisPlayer(false)
+            NaviGate('/signup', { replace: true })
+        }
+        else {
+            Auth.setisPlayer(true)
+        }
+    }, [NaviGate, Auth])
     return (
         <>
             <Header />

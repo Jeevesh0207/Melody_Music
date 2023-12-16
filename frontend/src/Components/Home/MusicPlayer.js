@@ -149,8 +149,8 @@ function MusicPlayer() {
             const AudioId = document.getElementById('AudioId')
             const PlayBtn = document.getElementById('PlayBtn')
             await axios.post(process.env.REACT_APP_BASE_URL + '/songfetch', Data).then(async (res) => {
-                console.log('Succesfully Fetch...')
-                console.log(res.data)
+                // console.log('Succesfully Fetch...')
+                // console.log(res.data)
 
                 // SongAuth.setSongURL(res.data.url)// For API
 
@@ -235,7 +235,7 @@ function MusicPlayer() {
                     Heart.className = 'fa-regular fa-heart'
                     Heart.style.color = '#fff'
                 }
-                console.log(res)
+                // console.log(res)
             }).catch((err) => {
                 console.log(err)
             })
@@ -295,11 +295,13 @@ function MusicPlayer() {
                 </div>
                 <div className='Mid'>
                     <div className='SBox L'>
-                        <i className="fa-solid fa-shuffle" id='SongShuffle' onClick={SetShuffleBool}></i>
+                        <i className="fa-solid fa-shuffle" id='SongShuffle' onClick={() => {
+                            (window.location.pathname !== '/search') && SetShuffleBool()
+                        }}></i>
                     </div>
                     <div className='SBox M'>
                         <i className="fa-solid fa-backward-step" onClick={() => {
-                            NextSong(-1)
+                            (window.location.pathname !== '/search') && NextSong(-1)
                         }}></i>
                         <i className="fa-solid fa-circle-play" onClick={() => {
                             if (SongAuth.SongID || SongAuth.SearchPicURL) {
@@ -307,7 +309,7 @@ function MusicPlayer() {
                             }
                         }} id='PlayBtn'></i>
                         <i className="fa-solid fa-forward-step" onClick={() => {
-                            NextSong(1)
+                            (window.location.pathname !== '/search') && NextSong(1)
                         }}></i>
                     </div>
                     <div className='SBox R'>

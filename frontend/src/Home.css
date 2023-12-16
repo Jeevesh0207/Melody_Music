@@ -1072,7 +1072,7 @@
     height: auto;
     position: relative;
     /* background-color: var(--yelowish_green); */
-    margin-bottom: 74px;
+    margin-bottom: 73px;
 }
 
 .Playlist .LoaderPage {
@@ -1180,7 +1180,7 @@
 
 @media screen and (max-width:346px) {
     .SingerPlaylist .Right .Top .Info h1 {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .SingerPlaylist .Right .Bottom .Box .SongDetail p {

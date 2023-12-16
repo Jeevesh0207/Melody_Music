@@ -1169,14 +1169,14 @@ SingerPlaylist.get('/dualipa', (req, res) => {
             Name: "One Kiss",
             Singer: "Calvin Harris, Dua Lipa",
             Album: "Calvin Harris",
-            ID: "DkeiKbqa02g"
+            ID: "YaOlxgJHif0"
         },
         {
             id: 4,
             Name: "No Lie",
             Singer: "Sean Paul & Dua Lipa",
             Album: "Sean Paul, No Lie ft. Dua Lipa",
-            ID: "GzU8KqOY8YA"
+            ID: "166tsC3RUcc"
         },
         {
             id: 5,
@@ -1284,35 +1284,35 @@ SingerPlaylist.get('/taylorswift', (req, res) => {
             Name: "You're Losing Me",
             Singer: "Taylor Swift",
             Album: "You're Losing Me",
-            ID: "pQq9eP5OFhw"
+            ID: "-UCW2aZ6m7"
         },
         {
             id: 2,
             Name: "I Don’t Wanna Live Forever",
             Singer: "ZAYN, Taylor Swift",
             Album: "ZAYN, I Don’t Wanna Live Forever",
-            ID: "-QTNFALG3U0"
+            ID: "0oigFUOOs1Y"
         },
         {
             id: 3,
             Name: "Delicate",
             Singer: "Taylor Swift",
             Album: "Delicate",
-            ID: "tCXGJQYZ9JA"
+            ID: "0i1o9lSUuI8"
         },
         {
             id: 4,
             Name: "Style",
             Singer: "Taylor Swift",
             Album: "Style",
-            ID: "-CmadmM5cOk"
+            ID: "XAVLUYDtCCw"
         },
         {
             id: 5,
             Name: "Wildest Dreams",
             Singer: "Taylor Swift",
             Album: "Taylor Swift, Wildest Dreams",
-            ID: "IdneKLhsWOQ"
+            ID: "vtW_4j7SsZk"
         },
         {
             id: 6,
@@ -1340,49 +1340,49 @@ SingerPlaylist.get('/taylorswift', (req, res) => {
             Name: "Shake It Off",
             Singer: "Taylor Swift",
             Album: "Taylor Swift, Shake It Off",
-            ID: "nfWlot6h_JM"
+            ID: "mvVBuG4IOW4"
         },
         {
             id: 10,
             Name: "Love Story",
             Singer: "Taylor Swift",
             Album: "Taylor Swift, Love Story",
-            ID: "8xg3vE8Ie_E"
+            ID: "KrsqPE9SMxo"
         },
         {
             id: 11,
             Name: "You Belong With Me",
             Singer: "Taylor Swift",
             Album: "You Belong With Me",
-            ID: "VuNIsY6JdUw"
+            ID: "nwK5Cq-RSsQ"
         },
         {
             id: 12,
             Name: "Back To December",
             Singer: "Taylor Swift",
             Album: "Taylor Swift, Back To December",
-            ID: "QUwxKWT6m7U"
+            ID: "zU3N-SUgHvE"
         },
         {
             id: 13,
             Name: "Style",
             Singer: "Taylor Swift",
             Album: "Taylor Swift, Style",
-            ID: "-CmadmM5cOk"
+            ID: "2JgvVfOfoWI"
         },
         {
             id: 14,
             Name: "Look What You Made Me Do",
             Singer: "Taylor Swift",
             Album: "Look What You Made Me Do",
-            ID: "3tmd-ClpJxA"
+            ID: "qii2cisW4zo"
         },
         {
             id: 15,
             Name: "Bad Blood",
             Singer: "Taylor Swift & Kendrick Lamar",
             Album: "Bad Blood ft. Kendrick Lamar",
-            ID: "QcIy9NiNbmo"
+            ID: "CXKEdnasDto"
         },
 
     ]
