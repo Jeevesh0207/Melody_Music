@@ -430,105 +430,105 @@ SingerPlaylist.get('/justinbieber', (req, res) => {
             Name: 'Let Me Love You',
             Singer: 'DJ Snake, Justin Bieber',
             Album: 'Encore',
-            ID: 'euCqAq6BRa4'
+            ID: 'SMs0GnYze34'
         },
         {
             id: 2,
             Name: 'Baby',
             Singer: 'Justin Bieber, Ludacris',
             Album: 'My World 2.0',
-            ID: 'kffacxfA7G4'
+            ID: 'khOFw2f4bQY'
         },
         {
             id: 3,
             Name: 'Stay',
             Singer: 'The Kid Laroi, Justin Bieber',
             Album: 'Stay',
-            ID: 'kTJczUoc26U'
+            ID: 'mQT0lnB44K8'
         },
         {
             id: 4,
             Name: 'Intentions',
             Singer: 'Justin Bieber, Quavo',
             Album: 'Intentions',
-            ID: '3AyMjyHu1bA'
+            ID: 'yrYxt1FZYgA'
         },
         {
             id: 5,
             Name: 'Peaches',
             Singer: 'Justin Bieber, Daniel Caesar, Giveon',
             Album: 'Justice',
-            ID: 'tQ0yjYUFKAE'
+            ID: 'kGcoKuK08-c'
         },
         {
             id: 6,
             Name: 'Ghost',
             Singer: 'Justin Bieber',
             Album: 'Justice Triple Chucks Deluxe',
-            ID: 'Fp8msa5uYsc'
+            ID: 'p6U7zIY6zkA'
         },
         {
             id: 7,
             Name: 'Stuck with U',
             Singer: 'Ariana Grande, Justin Bieber',
             Album: 'Stuck with U',
-            ID: 'pE49WK-oNjU'
+            ID: 'fz78HOxOgEY'
         },
         {
             id: 8,
             Name: 'Yummy',
             Singer: 'Justin Bieber',
             Album: 'Yummy',
-            ID: '8EJ3zbKTWQ8'
+            ID: '0pAkIrJfwao'
         },
         {
             id: 9,
             Name: 'Sorry',
             Singer: 'Justin Bieber',
             Album: 'Purpose',
-            ID: 'fRh_vgS2dFE'
+            ID: 'xEIKGJd68Jo'
         },
         {
             id: 10,
             Name: 'Love Yourself',
             Singer: 'Justin Bieber',
             Album: 'Purpose',
-            ID: 'oyEuk8j8imI'
+            ID: 'TMSIR210mRg'
         },
         {
             id: 11,
             Name: 'Company',
             Singer: 'Justin Bieber',
             Album: 'Purpose Deluxe',
-            ID: 'gdx7gN1UyX0'
+            ID: 'UPDDSxVThgQ'
         },
         {
             id: 12,
             Name: 'Eenie Meenie',
             Singer: 'Sean Kingston, Justin Bieber',
             Album: 'Eenie Meenie',
-            ID: 'prmmCg5bKxA'
+            ID: 'M1_g19ojPbc'
         },
         {
             id: 13,
             Name: 'Love Me',
             Singer: 'Justin Bieber',
             Album: 'My Worlds (International Version)',
-            ID: 'qdDVtFvJwUc'
+            ID: 'yVZPF0zxhTM'
         },
         {
             id: 14,
             Name: 'What Do You Mean?',
             Singer: 'Justin Bieber',
             Album: 'Purpose',
-            ID: 'DK_0jXPuIr0'
+            ID: 'LJjSyVe9LAs'
         },
         {
             id: 15,
             Name: "I Don't Care",
             Singer: 'Ed Sheeran, Justin Bieber',
             Album: "I Don't Care",
-            ID: 'y83x7MgzWOA'
+            ID: 'CCSGelSCPGE'
         },
 
 
