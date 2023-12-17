@@ -11,10 +11,10 @@ function Footer() {
             <p>©2023 All right reserved. <span>Jeevesh Rai</span></p>
         </div>
         <div className='Right'>
-        <i className="fa-solid fa-id-card-clip"></i>
+        <a href='https://jeeveshportfolio.netlify.app/' target='_blank' rel="noreferrer"><i className="fa-solid fa-id-card-clip"></i></a>
         <i className="fa-brands fa-square-instagram"></i>
-        <i className="fa-brands fa-linkedin"></i>
-        <i className="fa-brands fa-github"></i>
+        <a href='https://www.linkedin.com/in/jeevesh-rai-b678a0241/' target='_blank' rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
+        <a href='https://github.com/Jeevesh0207' target='_blank' rel="noreferrer"><i className="fa-brands fa-github"></i></a>
         </div>
     </div>
   )
