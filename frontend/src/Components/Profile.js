@@ -36,7 +36,9 @@ function Profile() {
             SongAuth.setoriginalDuration(TotalTime)
             SongAuth.settotalIntval(parseInt(TotalDuration))
             PlayBtn.className = 'fa-solid fa-circle-pause'
+            
             AudioId.play()
+            localStorage.setItem("CurrentSongArray", JSON.stringify(FavSong))
         }
         else {
             const Data = {
@@ -144,6 +146,9 @@ function Profile() {
     return (
         <>
             <Header />
+            {
+                // console.log(FavSong)
+            }
             <div className='Profile'>
                 {
                     (isLoading) && <div className='LoaderPage'><Loading /></div>

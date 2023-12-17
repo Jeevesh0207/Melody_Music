@@ -10,8 +10,6 @@ function MusicPlayer() {
     const [LoadingVar, setLoadingVar] = useState(false)
     const [RandNum, setRandNum] = useState('')
 
-
-
     const AddToFavourite = async () => {
         const Data = {
             Name: SongAuth.SongName,
@@ -30,7 +28,7 @@ function MusicPlayer() {
             else {
                 Heart.className = 'fa-regular fa-heart'
             }
-            console.log(res)
+            // console.log(res)
         }).catch((err) => {
             console.log(err)
         })
@@ -174,18 +172,39 @@ function MusicPlayer() {
             })
         }
         const setRanID = async () => {
-            const Data = {
-                Name: SongDATA[RandNum].Name,
-                Singer: SongDATA[RandNum].Singer,
-                id: SongDATA[RandNum].id,
-                ID: SongDATA[RandNum].ID
+            // console.log("setRanID")
+            if(SongDATA[RandNum].isSearch===true){
+                const AudioId = document.getElementById('AudioId')
+                const PlayBtn = document.getElementById('PlayBtn')
+                const songurl = SongDATA[RandNum].ID
+                SongAuth.SetSongData('', SongDATA[RandNum].Name, '')
+                SongAuth.setSearchPicURL(SongDATA[RandNum].url)
+                SongAuth.setSongURL(songurl)
+                SongAuth.setisSearch(true)
+                const TotalDuration = await getAudioDurationInSeconds(songurl);
+                const TotMinute = Math.floor(TotalDuration / 60)
+                const TotSecond = Math.floor(TotalDuration - TotMinute * 60)
+                const TotalTime = str_pad_left(TotMinute, '0', 2) + ':' + str_pad_left(TotSecond, '0', 2)
+                SongAuth.setoriginalDuration(TotalTime)
+                SongAuth.settotalIntval(parseInt(TotalDuration))
+                PlayBtn.className = 'fa-solid fa-circle-pause'
+                AudioId.play()
+                setRandNum('')
             }
-            localStorage.setItem("MusicPlayerDetail", JSON.stringify(Data))
-            setRandNum('')
-            await SongAuth.setBoolSong(true)
+            else{
+                const Data = {
+                    Name: SongDATA[RandNum].Name,
+                    Singer: SongDATA[RandNum].Singer,
+                    id: SongDATA[RandNum].id,
+                    ID: SongDATA[RandNum].ID
+                }
+                localStorage.setItem("MusicPlayerDetail", JSON.stringify(Data))
+                setRandNum('')
+                await SongAuth.setBoolSong(true)
+            }
         }
         if (RandNum) {
-            console.log('I am Setter of RandFun')
+            // console.log('I am Setter of RandFun')
             setRanID()
         }
         if (SongAuth.BoolPlay) {
@@ -210,9 +229,9 @@ function MusicPlayer() {
                 PlayBtn.className = 'fa-solid fa-circle-pause'
             }
             if (SongShuffle.style.color === 'rgb(255, 90, 102)') {
-                console.log('Hello')
+                // console.log('Hello')
                 const index = Math.floor((Math.random() * SongDATA.length))
-                console.log(index)
+                // console.log(index)
                 setRandNum(index)
 
             }
