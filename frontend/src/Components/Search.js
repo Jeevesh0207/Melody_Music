@@ -22,6 +22,7 @@ function Search() {
         }
         await axios.post(process.env.REACT_APP_BASE_URL + '/search', Data).then((res) => {
             const Data = res.data
+            console.log(Data)
             setSearchArray(Data.response)
             setisLoading(false)
             document.getElementById('inputval').value =""

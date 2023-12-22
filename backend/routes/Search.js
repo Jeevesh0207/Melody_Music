@@ -8,7 +8,7 @@ Search.post('/', async (req, res) => {
     const headers = {
         Accept: 'application/json',
     };
-    const URL = "https://musicapi.x007.workers.dev/search?q=" + Query + "&searchEngine=wunk"
+    const URL = "https://musicapi.x007.workers.dev/search?q=" + Query + "&searchEngine=mtmusic"
     await axios.get(URL, { params: headers }).then((result) => {
         return res.send(JSON.stringify(result.data))
     }).catch((err) => {
