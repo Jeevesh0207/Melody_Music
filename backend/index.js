@@ -34,7 +34,8 @@ app.use(bodyParser.urlencoded({extended:false}))
 const corsOption={
     origin:'*',
     credentials:true,
-    optionSuccessStatus:200
+    optionSuccessStatus:200,
+    methods: ['GET', 'POST', 'PUT', 'DELETE']
 }
 
 const dbOption={
