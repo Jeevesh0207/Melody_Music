@@ -6,7 +6,7 @@ const app=express()
 import "dotenv/config"
 // require('dotenv/config')
 
-const Home=require('.api/Home')
+// const Home=require('/Home')
 // const Devotion=require('./routes/Devotion')
 // const Lofi=require('./routes/Lofi')
 // const Old=require('./routes/Old')
@@ -43,7 +43,10 @@ const dbOption={
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(cors(corsOption))
-app.use('/',Home)
+
+app.use('/', routes);
+
+// app.use('/',Home)
 // app.use('/devotion',Devotion)
 // app.use('/lofi',Lofi)
 // app.use('/old',Old)
