@@ -1,7 +1,7 @@
 const express=require('express')
 const TopHits=express.Router()
 
-TopHits.get('/',(req,res)=>{
+TopHits.get('/tophits',(req,res)=>{
     const array=[
         {
             id:1,

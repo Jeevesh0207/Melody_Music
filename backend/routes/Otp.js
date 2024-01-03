@@ -4,11 +4,11 @@ const Otp = express.Router()
 const Schema = require('../model/Schemas')
 require('dotenv/config')
 
-Otp.get('/', (req, res) => {
+Otp.get('/otp', (req, res) => {
     res.send("<h1>I am Otp</h1>")
 })
 
-Otp.post('/', async (req, res) => {
+Otp.post('/otp', async (req, res) => {
     const Email = req.body.Email
     const FName = req.body.FName
     const LName = req.body.LName
@@ -79,7 +79,7 @@ Otp.post('/', async (req, res) => {
 })
 
 
-Otp.post('/forgot', async (req, res) => {
+Otp.post('/otp/forgot', async (req, res) => {
     const Email = req.body.Email
     var string = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     let OTP = "";

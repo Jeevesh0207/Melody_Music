@@ -2,7 +2,7 @@ const express = require('express')
 const LoginVerify = express.Router()
 const Schema = require('../model/Schemas')
 
-LoginVerify.post('/',async(req,res)=>{
+LoginVerify.post('/loginverify',async(req,res)=>{
     const UserName=req.body.UserName
     const userPassword=req.body.Password
     const user=Schema.Users

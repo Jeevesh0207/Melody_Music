@@ -1,7 +1,7 @@
 const express=require('express')
 const Romantic=express.Router()
 
-Romantic.get('/',(req,res)=>{
+Romantic.get('/romantic',(req,res)=>{
     const array=[
         {
             id:1,

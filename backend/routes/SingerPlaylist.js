@@ -8,7 +8,7 @@ SingerPlaylist.get('/', (req, res) => {
 
 // --------Arjit Singh----------
 
-SingerPlaylist.get('/arjitsinghinfo', (req, res) => {
+SingerPlaylist.get('/singerplaylist/arjitsinghinfo', (req, res) => {
     const Data = [
         {
             Name: 'Arjit Singh',
@@ -24,7 +24,7 @@ SingerPlaylist.get('/arjitsinghinfo', (req, res) => {
     res.end()
 })
 
-SingerPlaylist.get('/arjitsingh', (req, res) => {
+SingerPlaylist.get('/singerplaylist/arjitsingh', (req, res) => {
     const Data = [
         {
             id: 1,
@@ -209,7 +209,7 @@ SingerPlaylist.get('/arjitsingh', (req, res) => {
 
 // --------Jubin Nautiya----------
 
-SingerPlaylist.get('/jubinnautiyalinfo', (req, res) => {
+SingerPlaylist.get('/singerplaylist/jubinnautiyalinfo', (req, res) => {
     const Data = [
         {
             Name: 'Jubin Nautiyal',
@@ -224,7 +224,7 @@ SingerPlaylist.get('/jubinnautiyalinfo', (req, res) => {
     res.send(Data)
 })
 
-SingerPlaylist.get('/jubinnautiyal', (req, res) => {
+SingerPlaylist.get('/singerplaylist/jubinnautiyal', (req, res) => {
     const Data = [
         {
             id: 1,
@@ -408,7 +408,7 @@ SingerPlaylist.get('/jubinnautiyal', (req, res) => {
 
 // --------Justin Bieber----------
 
-SingerPlaylist.get('/justinbieberinfo', (req, res) => {
+SingerPlaylist.get('/singerplaylist/justinbieberinfo', (req, res) => {
     const Data = [
         {
             Name: 'Justin Bieber',
@@ -423,7 +423,7 @@ SingerPlaylist.get('/justinbieberinfo', (req, res) => {
     res.send(Data)
 })
 
-SingerPlaylist.get('/justinbieber', (req, res) => {
+SingerPlaylist.get('/singerplaylist/justinbieber', (req, res) => {
     const Data = [
         {
             id: 1,
@@ -538,7 +538,7 @@ SingerPlaylist.get('/justinbieber', (req, res) => {
 
 // --------Kim Taehyung----------
 
-SingerPlaylist.get('/kimtaehyunginfo', (req, res) => {
+SingerPlaylist.get('/singerplaylist/kimtaehyunginfo', (req, res) => {
     const Data = [
         {
             Name: 'Kim Tae-hyung',
@@ -553,7 +553,7 @@ SingerPlaylist.get('/kimtaehyunginfo', (req, res) => {
     res.send(Data)
 })
 
-SingerPlaylist.get('/kimtaehyung', (req, res) => {
+SingerPlaylist.get('/singerplaylist/kimtaehyung', (req, res) => {
     const Data = [
         {
             id: 1,
@@ -631,7 +631,7 @@ SingerPlaylist.get('/kimtaehyung', (req, res) => {
 
 // --------Sonu Nigam----------
 
-SingerPlaylist.get('/sonunigaminfo', (req, res) => {
+SingerPlaylist.get('/singerplaylist/sonunigaminfo', (req, res) => {
     const Data = [
         {
             Name: 'Sonu Nigam',
@@ -646,7 +646,7 @@ SingerPlaylist.get('/sonunigaminfo', (req, res) => {
     res.send(Data)
 })
 
-SingerPlaylist.get('/sonunigam', (req, res) => {
+SingerPlaylist.get('/singerplaylist/sonunigam', (req, res) => {
     const Data = [
         {
             "id": 1,
@@ -746,7 +746,7 @@ SingerPlaylist.get('/sonunigam', (req, res) => {
 
 // --------Kumar Sanu----------
 
-SingerPlaylist.get('/kumarsanuinfo', (req, res) => {
+SingerPlaylist.get('/singerplaylist/kumarsanuinfo', (req, res) => {
     const Data = [
         {
             Name: 'Kumar Sanu',
@@ -761,7 +761,7 @@ SingerPlaylist.get('/kumarsanuinfo', (req, res) => {
     res.send(Data)
 })
 
-SingerPlaylist.get('/kumarsanu', (req, res) => {
+SingerPlaylist.get('/singerplaylist/kumarsanu', (req, res) => {
     const Data = [
         {
             "id": 1,
@@ -875,7 +875,7 @@ SingerPlaylist.get('/kumarsanu', (req, res) => {
 
 // --------Atif Aslam----------
 
-SingerPlaylist.get('/atifaslaminfo', (req, res) => {
+SingerPlaylist.get('/singerplaylist/atifaslaminfo', (req, res) => {
     const Data = [
         {
             Name: 'Atif Aslam',
@@ -890,7 +890,7 @@ SingerPlaylist.get('/atifaslaminfo', (req, res) => {
     res.send(Data)
 })
 
-SingerPlaylist.get('/atifaslam', (req, res) => {
+SingerPlaylist.get('/singerplaylist/atifaslam', (req, res) => {
     const Data = [
         {
             id: 1,
@@ -1004,7 +1004,7 @@ SingerPlaylist.get('/atifaslam', (req, res) => {
 
 // --------Ed Sheeran----------
 
-SingerPlaylist.get('/edsheeraninfo', (req, res) => {
+SingerPlaylist.get('/singerplaylist/edsheeraninfo', (req, res) => {
     const Data = [
         {
             Name: 'Ed Sheeran',
@@ -1019,7 +1019,7 @@ SingerPlaylist.get('/edsheeraninfo', (req, res) => {
     res.send(Data)
 })
 
-SingerPlaylist.get('/edsheeran', (req, res) => {
+SingerPlaylist.get('/singerplaylist/edsheeran', (req, res) => {
     const Data = [
         {
             id: 1,
@@ -1133,7 +1133,7 @@ SingerPlaylist.get('/edsheeran', (req, res) => {
 
 // --------Dua Lipa----------
 
-SingerPlaylist.get('/dualipainfo', (req, res) => {
+SingerPlaylist.get('/singerplaylist/dualipainfo', (req, res) => {
     const Data = [
         {
             Name: 'Dua Lipa',
@@ -1148,7 +1148,7 @@ SingerPlaylist.get('/dualipainfo', (req, res) => {
     res.send(Data)
 })
 
-SingerPlaylist.get('/dualipa', (req, res) => {
+SingerPlaylist.get('/singerplaylist/dualipa', (req, res) => {
     const Data = [
         {
             id: 1,
@@ -1262,7 +1262,7 @@ SingerPlaylist.get('/dualipa', (req, res) => {
 
 // --------Taylor Swift----------
 
-SingerPlaylist.get('/taylorswiftinfo', (req, res) => {
+SingerPlaylist.get('/singerplaylist/taylorswiftinfo', (req, res) => {
     const Data = [
         {
             Name: 'Taylor Swift',
@@ -1277,7 +1277,7 @@ SingerPlaylist.get('/taylorswiftinfo', (req, res) => {
     res.send(Data)
 })
 
-SingerPlaylist.get('/taylorswift', (req, res) => {
+SingerPlaylist.get('/singerplaylist/taylorswift', (req, res) => {
     const Data = [
         {
             id: 1,
@@ -1391,7 +1391,7 @@ SingerPlaylist.get('/taylorswift', (req, res) => {
 
 // --------Shreya Ghoshal----------
 
-SingerPlaylist.get('/shreyaghoshalinfo', (req, res) => {
+SingerPlaylist.get('/singerplaylist/shreyaghoshalinfo', (req, res) => {
     const Data = [
         {
             Name: 'Shreya Ghoshal',
@@ -1405,7 +1405,7 @@ SingerPlaylist.get('/shreyaghoshalinfo', (req, res) => {
     res.send(Data)
 })
 
-SingerPlaylist.get('/shreyaghoshal', (req, res) => {
+SingerPlaylist.get('/singerplaylist/shreyaghoshal', (req, res) => {
     const Data = [
         {
             "id": "1",

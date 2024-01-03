@@ -6,11 +6,11 @@ const path = require('path');
 const fs = require('fs')
 require('dotenv/config')
 
-UserData.get('/', (req, res) => {
+UserData.get('/userdata', (req, res) => {
     res.send('<h1>I am Userdata</h1>')
 })
 
-UserData.post('/', async (req, res) => {
+UserData.post('/userdata', async (req, res) => {
     const FName = req.body.FName
     const LName = req.body.LName
     const Email = req.body.Email
@@ -53,7 +53,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 
-UserData.post('/update', upload.single('image'), async (req, res) => {
+UserData.post('/userdata/update', upload.single('image'), async (req, res) => {
     const FName = req.body.FName
     const LName = req.body.LName
     const UserName = req.body.UserName
@@ -99,7 +99,7 @@ UserData.post('/update', upload.single('image'), async (req, res) => {
     res.end()
 })
 
-UserData.post('/updatedata',async(req,res)=>{
+UserData.post('/userdata/updatedata',async(req,res)=>{
     const FName = req.body.FName
     const LName = req.body.LName
     const UserName = req.body.UserName

@@ -3,7 +3,7 @@ const Search = express.Router()
 const axios = require('axios')
 require('dotenv/config')
 
-Search.post('/', async (req, res) => {
+Search.post('/search', async (req, res) => {
     const Query = req.body.Search
     const headers = {
         Accept: 'application/json',

@@ -2,7 +2,7 @@ const express=require('express')
 const Schema=require('../model/Schemas')
 const Fogort=express()
 
-Fogort.post('/verifyemail',async(req,res)=>{
+Fogort.post('/forgot/verifyemail',async(req,res)=>{
     const Email=req.body.Email
     const user=Schema.Users
     const CheckEmail=await user.findOne({email:Email})

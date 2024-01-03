@@ -4,7 +4,7 @@ const Schema = require('../model/Schemas')
 const nodemailer = require('nodemailer')
 require('dotenv/config')
 
-OtpVerify.post('/', async (req, res) => {
+OtpVerify.post('/verifyotp', async (req, res) => {
     const FName = req.body.FName
     const LName = req.body.LName
     const Email = req.body.Email
@@ -36,7 +36,7 @@ OtpVerify.post('/', async (req, res) => {
 
 })
 
-OtpVerify.post('/forgot', async (req, res) => {
+OtpVerify.post('/verifyotp/forgot', async (req, res) => {
     const Email = req.body.Email
     const UserOtp = req.body.UserOtp
     const otpdata = Schema.Otpdata

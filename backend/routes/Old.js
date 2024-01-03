@@ -1,7 +1,7 @@
 const express=require('express')
 const Old=express.Router()
 
-Old.get('/',(req,res)=>{
+Old.get('/old',(req,res)=>{
     const array=[
         {
             id:1,

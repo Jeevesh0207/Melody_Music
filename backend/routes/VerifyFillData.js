@@ -3,13 +3,13 @@ const VerifyFillData = express.Router()
 const Schema = require('../model/Schemas')
 require('dotenv/config')
 
-VerifyFillData.get('/', async (req, res) => {
+VerifyFillData.get('/verifyfilldata', async (req, res) => {
     res.send('<h1>I am VerifyFillData</h1>')
 
 })
 
 
-VerifyFillData.post('/', async (req, res) => {
+VerifyFillData.post('/verifyfilldata', async (req, res) => {
     const UserName = req.body.UserName
     const Email = req.body.Email
     const user = Schema.Users

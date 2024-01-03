@@ -2,7 +2,7 @@ const express=require('express')
 const AddToFavourite=express.Router()
 const Schema=require('../model/Schemas')
 
-AddToFavourite.post('/',async(req,res)=>{
+AddToFavourite.post('/addtofavourite',async(req,res)=>{
     const Name=req.body.Name
     const SingerName=req.body.SingerName
     const SongID=req.body.ID
@@ -47,7 +47,7 @@ AddToFavourite.post('/',async(req,res)=>{
     res.end()
 })
 
-AddToFavourite.post('/find',async(req,res)=>{
+AddToFavourite.post('/addtofavourite/find',async(req,res)=>{
     const SongID=req.body.ID
     const UserName=req.body.UserName
     const useschema=Schema.Users

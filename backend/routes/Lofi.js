@@ -1,7 +1,7 @@
 const express=require('express')
 const Lofi=express.Router()
 
-Lofi.get('/',(req,res)=>{
+Lofi.get('/lofi',(req,res)=>{
     const array=[
         {
             id:1,

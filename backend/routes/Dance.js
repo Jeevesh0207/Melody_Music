@@ -1,7 +1,7 @@
 const express=require('express')
 const Dance=express.Router()
 
-Dance.get('/',async(req,res)=>{
+Dance.get('/dance',async(req,res)=>{
     const array=[
         {
             id:1,

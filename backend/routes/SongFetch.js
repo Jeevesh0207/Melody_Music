@@ -3,7 +3,7 @@ const SongFetch = express.Router()
 const ytdl = require("ytdl-core");
 // const axios = require('axios');
 
-SongFetch.post('/', async (req, res) => {
+SongFetch.post('/songfetch', async (req, res) => {
     console.log('Song Fetching Start..')
     const ID = req.body.ID
     let info = await ytdl.getInfo(ID);

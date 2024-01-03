@@ -2,7 +2,7 @@ const { json } = require('body-parser')
 const express=require('express')
 const Slider=express.Router()
 
-Slider.get('/',async(req,res)=>{
+Slider.get('/slider',async(req,res)=>{
     const Data=[
         {
             id:1,

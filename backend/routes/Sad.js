@@ -1,7 +1,7 @@
 const express=require('express')
 const Sad=express.Router()
 
-Sad.get('/',(req,res)=>{
+Sad.get('/sad',(req,res)=>{
     const array=[
         {
             id:1,
