@@ -1,7 +1,7 @@
 const express=require('express')
 const Devotion=express.Router()
 
-Devotion.get('/',(req,res)=>{
+Devotion.get('/devotion',(req,res)=>{
     const array=[
         {
             id:1,
