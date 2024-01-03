@@ -9,7 +9,7 @@ const Sad = require('./Sad');
 const TopHits = require('./TopHits');
 const Otp = require('./Otp');
 
-// const UserData = require('./UserData');
+const UserData = require('./UserData');
 
 const VerifyfillData = require('./VerifyFillData');
 const OtpVerify = require('./OtpVerify');
@@ -36,7 +36,7 @@ router.use('/', Sad);
 router.use('/', TopHits);
 router.use('/', Otp);
 
-// router.use('/', UserData);
+router.use('/', UserData);
 
 router.use('/', VerifyfillData);
 router.use('/', OtpVerify);

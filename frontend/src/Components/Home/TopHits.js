@@ -25,6 +25,7 @@ function TopHits() {
     useEffect(() => {
         const FetchAllData = async () => {
             await axios.get(API + '/tophits').then((res) => {
+                console.log("Ka hoo hmko nhi Jante..")
                 setTopHitsData(res.data)
             }).catch((err) => {
                 console.log(err)
