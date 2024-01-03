@@ -9,7 +9,7 @@ const Sad = require('./Sad');
 const TopHits = require('./TopHits');
 const Otp = require('./Otp');
 
-// const UserData = require('./UserData');
+const UserData = require('./UserData');
 
 const VerifyfillData = require('./VerifyFillData');
 const OtpVerify = require('./OtpVerify');
@@ -36,7 +36,7 @@ router.use('/', Sad);
 router.use('/', TopHits);
 router.use('/', Otp);
 
-// router.use('/', UserData);
+router.use('/', UserData);
 
 router.use('/', VerifyfillData);
 router.use('/', OtpVerify);
@@ -51,11 +51,6 @@ router.use('/', Search);
 router.use('/', ProfileData);
 router.use('/', AddToFavourite);
 
-app.use('/sliderimages', express.static('./public/image/Slider'));
-app.use('/singerplaylist', express.static('./public/image/Playlist'));
-app.use('/uploads',express.static('./uploads'))
-app.use('/tophitsimages', express.static('./public/image/TopHits'));
-app.use('/internationaltophits', express.static('./public/image/InternationalTopHits'));
-app.use('/romantic', express.static('./public/image/Romantic'));
+
 
 module.exports = router;
