@@ -1,6 +1,6 @@
-// routes.js
-
 const express = require('express');
+const router = express.Router();
+
 const Devotion = require('./Devotion');
 const Lofi = require('./Lofi');
 const Old = require('./Old');
@@ -23,39 +23,38 @@ const ProfileData = require('./ProfileData');
 const AddToFavourite = require('./AddToFavourite');
 const Home=require('/Home')
 
-const Home = express.Router();
 
-Home.use('/',Home)
-Home.use('/devotion', Devotion);
-Home.use('/lofi', Lofi);
-Home.use('/old', Old);
-Home.use('/romantic', Romantic);
-Home.use('/sad', Sad);
-Home.use('/tophits', TopHits);
-Home.use('/otp', Otp);
-Home.use('/userdata', UserData);
-Home.use('/verifyfilldata', VerifyfillData);
-Home.use('/verifyotp', OtpVerify);
-Home.use('/loginverify', LoginVerify);
-Home.use('/forgot', Forgot);
-Home.use('/slider', Slider);
-Home.use('/songfetch', SongFetch);
-Home.use('/internationaltophits', InternationalTopHits);
-Home.use('/dance', Dance);
-Home.use('/singerplaylist', SingerPlaylist);
-Home.use('/search', Search);
-Home.use('/profiledata', ProfileData);
-Home.use('/addtofavourite', AddToFavourite);
+router.use('/',Home)
+router.use('/devotion', Devotion);
+router.use('/lofi', Lofi);
+router.use('/old', Old);
+router.use('/romantic', Romantic);
+router.use('/sad', Sad);
+router.use('/tophits', TopHits);
+router.use('/otp', Otp);
+router.use('/userdata', UserData);
+router.use('/verifyfilldata', VerifyfillData);
+router.use('/verifyotp', OtpVerify);
+router.use('/loginverify', LoginVerify);
+router.use('/forgot', Forgot);
+router.use('/slider', Slider);
+router.use('/songfetch', SongFetch);
+router.use('/internationaltophits', InternationalTopHits);
+router.use('/dance', Dance);
+router.use('/singerplaylist', SingerPlaylist);
+router.use('/search', Search);
+router.use('/profiledata', ProfileData);
+router.use('/addtofavourite', AddToFavourite);
 
-Home.use('/sliderimages', express.static('../public/image/Slider'));
-Home.use('/singerplaylist', express.static('../public/image/Playlist'));
-Home.use('/uploads', express.static('../uploads'))
-Home.use('/tophitsimages', express.static('../public/image/TopHits'));
-Home.use('/internationaltophits', express.static('../public/image/InternationalTopHits'));
-Home.use('/romantic', express.static('../public/image/Romantic'));
+router.use('/sliderimages', express.static('../public/image/Slider'));
+router.use('/singerplaylist', express.static('../public/image/Playlist'));
+router.use('/uploads', express.static('../uploads'))
+router.use('/tophitsimages', express.static('../public/image/TopHits'));
+router.use('/internationaltophits', express.static('../public/image/InternationalTopHits'));
+router.use('/romantic', express.static('../public/image/Romantic'));
 
-Home.get('/', (req, res) => {
+router.get('/', (req, res) => {
   res.send("<h1>I am Home</h1>")
 });
 
-module.exports = Home;
+module.exports = router;
