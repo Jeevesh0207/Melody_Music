@@ -65,13 +65,13 @@ app.use('/search',Search)
 app.use('/profiledata',ProfileData)
 app.use('/addtofavourite',AddToFavourite)
 
-app.use('/sliderimages', express.static('./public/image/Slider'));
-app.use('/singerplaylist', express.static('./public/image/Playlist'));
-app.use('/uploads',express.static('./uploads'))
+// app.use('/sliderimages', express.static('./public/image/Slider'));
+// app.use('/singerplaylist', express.static('./public/image/Playlist'));
+// app.use('/uploads',express.static('./uploads'))
 
-app.use('/tophitsimages', express.static('./public/image/TopHits'));
-app.use('/internationaltophits', express.static('./public/image/InternationalTopHits'));
-app.use('/romantic', express.static('./public/image/Romantic'));
+// app.use('/tophitsimages', express.static('./public/image/TopHits'));
+// app.use('/internationaltophits', express.static('./public/image/InternationalTopHits'));
+// app.use('/romantic', express.static('./public/image/Romantic'));
 
 
 mongoose.connect(process.env.DB_URL).then(()=>{
