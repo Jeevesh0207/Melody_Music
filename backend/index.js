@@ -73,14 +73,18 @@ app.use('/',Home)
 // app.use('/internationaltophits', express.static('./public/image/InternationalTopHits'));
 // app.use('/romantic', express.static('./public/image/Romantic'));
 
-
+const server = http.createServer(app);
+const port=4000
 mongoose.connect(process.env.DB_URL).then(()=>{
   console.log('DB Connect Succesfully..')
+  server.listen(port, () => {
+    console.log(`Server is listening on port ${port}`);
+  });
 }).catch((err)=>{
     console.log(err)
 })
 
-const port=4000
-const server=app.listen(port,()=>{
-    console.log(`Server has been started on this ${port}`)
-})
+
+// const server=app.listen(port,()=>{
+//     console.log(`Server has been started on this ${port}`)
+// })
