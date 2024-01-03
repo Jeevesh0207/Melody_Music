@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const Devotion = require('./Devotion');
-// const Lofi = require('./Lofi');
+const Lofi = require('./Lofi');
 // const Old = require('./Old');
 // const Romantic = require('./Romantic');
 // const Sad = require('./Sad');
@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
 });
 
 router.use('/', Devotion);
-// router.use('/', Lofi);
+router.use('/', Lofi);
 // router.use('/', Old);
 // router.use('/', Romantic);
 // router.use('/', Sad);
