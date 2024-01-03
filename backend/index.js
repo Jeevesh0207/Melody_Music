@@ -4,6 +4,7 @@ const bodyParser=require('body-parser')
 const mongoose=require('mongoose')
 const app=express()
 import "dotenv/config"
+const routes=require('./routes/routes')
 // require('dotenv/config')
 
 // const Home=require('/Home')

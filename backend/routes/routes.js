@@ -21,10 +21,11 @@ const SingerPlaylist = require('./SingerPlaylist');
 const Search = require('./Search');
 const ProfileData = require('./ProfileData');
 const AddToFavourite = require('./AddToFavourite');
-const Home=require('/Home')
 
+router.get('/', (req, res) => {
+    res.send("<h1>I am Home</h1>")
+});
 
-router.use('/',Home)
 router.use('/devotion', Devotion);
 router.use('/lofi', Lofi);
 router.use('/old', Old);
@@ -53,8 +54,6 @@ router.use('/tophitsimages', express.static('../public/image/TopHits'));
 router.use('/internationaltophits', express.static('../public/image/InternationalTopHits'));
 router.use('/romantic', express.static('../public/image/Romantic'));
 
-router.get('/', (req, res) => {
-  res.send("<h1>I am Home</h1>")
-});
+
 
 module.exports = router;
