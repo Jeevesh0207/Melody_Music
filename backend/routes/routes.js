@@ -3,11 +3,11 @@ const router = express.Router();
 
 const Devotion = require('./Devotion');
 const Lofi = require('./Lofi');
-// const Old = require('./Old');
-// const Romantic = require('./Romantic');
-// const Sad = require('./Sad');
-// const TopHits = require('./TopHits');
-// const Otp = require('./Otp');
+const Old = require('./Old');
+const Romantic = require('./Romantic');
+const Sad = require('./Sad');
+const TopHits = require('./TopHits');
+const Otp = require('./Otp');
 // const UserData = require('./UserData');
 // const VerifyfillData = require('./VerifyFillData');
 // const OtpVerify = require('./OtpVerify');
@@ -28,11 +28,11 @@ router.get('/', (req, res) => {
 
 router.use('/', Devotion);
 router.use('/', Lofi);
-// router.use('/', Old);
-// router.use('/', Romantic);
-// router.use('/', Sad);
-// router.use('/', TopHits);
-// router.use('/', Otp);
+router.use('/', Old);
+router.use('/', Romantic);
+router.use('/', Sad);
+router.use('/', TopHits);
+router.use('/', Otp);
 // router.use('/', UserData);
 // router.use('/', VerifyfillData);
 // router.use('/', OtpVerify);
