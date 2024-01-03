@@ -44,7 +44,7 @@ const dbOption={
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(cors(corsOption))
-
+app.use(helmet());
 app.use('/', routes);
 
 // app.use('/',Home)
