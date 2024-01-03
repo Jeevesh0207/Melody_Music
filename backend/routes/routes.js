@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
+const app=express()
 const Devotion = require('./Devotion');
 const Lofi = require('./Lofi');
 const Old = require('./Old');
@@ -51,11 +51,11 @@ router.use('/', Search);
 router.use('/', ProfileData);
 router.use('/', AddToFavourite);
 
-router.use('/sliderimages', express.static('../public/image/Slider'));
-router.use('/singerplaylist', express.static('../public/image/Playlist'));
-router.use('/uploads', express.static('../uploads'))
-router.use('/tophitsimages', express.static('../public/image/TopHits'));
-router.use('/internationaltophits', express.static('../public/image/InternationalTopHits'));
-router.use('/romantic', express.static('../public/image/Romantic'));
+app.use('/sliderimages', express.static('./public/image/Slider'));
+app.use('/singerplaylist', express.static('./public/image/Playlist'));
+app.use('/uploads',express.static('./uploads'))
+app.use('/tophitsimages', express.static('./public/image/TopHits'));
+app.use('/internationaltophits', express.static('./public/image/InternationalTopHits'));
+app.use('/romantic', express.static('./public/image/Romantic'));
 
 module.exports = router;

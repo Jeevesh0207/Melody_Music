@@ -79,6 +79,7 @@ app.use('/', routes);
 // app.use('/internationaltophits', express.static('./public/image/InternationalTopHits'));
 // app.use('/romantic', express.static('./public/image/Romantic'));
 
+
 const port=4000
 mongoose.connect(process.env.DB_URL).then(()=>{
   console.log('DB Connect Succesfully..')
