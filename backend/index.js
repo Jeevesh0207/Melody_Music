@@ -3,11 +3,11 @@ const cors=require('cors')
 const bodyParser=require('body-parser')
 const mongoose=require('mongoose')
 const app=express()
-import "dotenv/config"
+
 const routes=require('./routes/routes')
 const helmet = require("helmet");
 
-// require('dotenv/config')
+require('dotenv/config')
 
 // const Home=require('/Home')
 // const Devotion=require('./routes/Devotion')
