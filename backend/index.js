@@ -6,7 +6,7 @@ const app=express()
 import "dotenv/config"
 // require('dotenv/config')
 
-const Home=require('./routes/Home')
+const Home=require('.api/Home')
 // const Devotion=require('./routes/Devotion')
 // const Lofi=require('./routes/Lofi')
 // const Old=require('./routes/Old')
